@@ -41,30 +41,31 @@ body {
 
 /* Link active and hover */
 
-.logo:active>.footer-logo-web-accent,
+.logo:focus>.footer-logo-web-accent,
 .logo:hover>.footer-logo-web-accent {
     color: var(--color-white);
 }
 
-.link:active,
+.link:focus,
 .link:hover,
-.logo:active>.logo-studio-black,
+.logo:focus>.logo-studio-black,
 .logo:hover>.logo-studio-black,
-.logo:active>.footer-logo-studio-white,
+.logo:focus>.footer-logo-studio-white,
 .logo:hover>.footer-logo-studio-white {
     color: var(--color-accent);
 }
 
 .logo:hover>.logo-web-accent,
-.logo:active>.logo-web-accent {
+.logo:focus>.logo-web-accent {
     color: var(--color-title);
 }
 
-.link-nav:active,
+.link-nav:focus,
 .link-nav:hover,
-.link-kontact:active,
+.link-nav:focus,
+.link-kontact:focus,
 .link-kontact:hover,
-.hero-botton:active,
+.hero-botton:focus,
 .hero-botton:hover {
     color: var(--color-nav-accent);
 }
@@ -138,6 +139,11 @@ address {
     cursor: pointer;
 }
 
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--color-nav-accent);
+}
+
 
 /* About us section */
 
@@ -146,7 +152,7 @@ address {
     font-family: Roboto;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.02em;
     color: var(--color-background-navyblue);
 }
 
@@ -176,8 +182,8 @@ address {
     color: var(--color-background-navyblue);
 }
 
-.specialist-list {
-    color: var(--color-white);
+.specialist {
+    background-color: var(--color-white);
 }
 
 .specialist-title {
@@ -219,7 +225,7 @@ address {
     font-size: 16px;
     font-family: Roboto;
     line-height: 1.5;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
 }
 
 
@@ -234,13 +240,12 @@ address {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    justify-content: center;
     color: var(--color-accent);
     background-color: var(--color-footer-paragraph);
     cursor: pointer;
 }
 
-.portfolio-button:active,
+.portfolio-button:focus,
 .portfolio-button:hover {
     color: var(--color-white);
     background-color: var(--color-nav-accent);
